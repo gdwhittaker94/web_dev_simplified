@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" hreflang="en" type="text/css" media="screen" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Hind+Siliguri:wght@300;400;600&family=Squada+One&display=swap" rel="stylesheet">
+    <title>WDS Bootcamp</title>
+  </head>
+  <body>
+
+    <!--? Write the HTML markup with the CSS design in mind later -->
+
+    <!--* HEADER SECTION -->
+    <header class="header">
+      <nav class="nav nav--top">
+        <img src="./images/wds_logo.png" alt="Web Dev Simplified logo" class="nav__logo">
+        <ul class="nav__list">
+          <li><a href="#">Curriculum</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a class="nav__list-button" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__main-heading">WDS Bootcamp</h1>
+      <span class="header__sub-heading">From no stack to full-stack</span>
+      <a href="#" class="header__link">Learn More</a>
+      <img class="header__image animation2" src="./images/arrow_down.svg" alt="Down Arrow" >
+    </header>
+
+    <!--* MAIN PAGE SECTION -->
+    <main>
+      <section class="mainSection">
+        <h2 class="mainSection__header">Curriculum</h1>
+          <div class="mainSection__grid">
+            <div class="mainSection__grid-item">
+              <img src="./images/html_icon.svg" alt="HTML 5 Icon">
+              <p>Start with the basics by using HTML/CSS to build your first website.</p>
+            </div>
+            <div class="mainSection__grid-item">
+              <img src="./images/node_js_icon.svg" alt="Node Javascript Icon">
+              <p>Build interactive web applications with the world's most popular backend.</p>
+            </div>
+            <div class="mainSection__grid-item">
+              <img src="./images/vscode_icon.svg" alt="Visual Studio Code Icon">
+              <p>Use the latest technology for creating and coding amazing web applications.</p>
+            </div>
+            <div class="mainSection__grid-item">
+              <img src="./images/database_icon.svg" alt="Database Icon">
+              <p>Manage application data by learning SQL and NoSQL database architecture.</p>
+            </div>
+            <div class="mainSection__grid-item">
+              <img src="./images/edit_page_icon.svg" alt="Webpage Editing Icon">
+              <p>Creating stunning designs by using modern design tools like Figma and Sketch.</p>
+            </div>
+            <div class="mainSection__grid-item">
+              <img src="./images/react_icon.svg" alt="React Icon">
+              <p>Use the most popular fronted framework to create modern PWAs.</p>
+            </div>
+          </div>
+      </section>
+
+      <!--* EXTRA INFO SECTION -->
+      <section class="extraInfoSection">
+        <div class="extraInfoSection__container">
+
+          <!--? Kyle: HTML content first, get it all there, then styling second. -->
+
+          <!--? Notice how Kyle breaks up this section: 1) section container: this is for the big blue area where the following cards are going to go, 2) A nested container to hold the cards, 3) individual card containers, 4) Smaller elements inside the cards -> break things up into their smaller parts -->
+
+          <!-- CARD 1 -->
+          <div class="extraInfoSection__card">
+            <div class="extraInfoSection__header">
+              <div class="extraInfoSection__headerText">
+                Basic
+              </div>
+              <div class="extraInfoSection__headerPrice">
+                $10
+              </div>
+              <!--? Only puts $10 so can add '/mo' later with CSS pseudo-element and style it completely different than this $10 -->
+            </div>
+            <ul class="extraInfoSection__list">
+                <li class="extraInfoSection__listItem">4 Videos Per Month</li>
+                <li class="extraInfoSection__listItem">1 Project Based Video Per Month</li>
+                <li class="extraInfoSection__listItem extraInfoSection__listItem--crossedOut">Weekly Live Streams</li>
+                <li class="extraInfoSection__listItem extraInfoSection__listItem--crossedOut">24/7 Email Support</li>
+                <li class="extraInfoSection__listItem extraInfoSection__listItem--crossedOut">24/7 Phone Support</li>
+                <li class="extraInfoSection__listItem extraInfoSection__listItem--crossedOut">1 Project Code Review Per Month</li>
+            </ul>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="extraInfoSection__card extraInfoSection__card--white">
+            <div class="extraInfoSection__header">
+              <div class="extraInfoSection__headerText">
+                Preferred
+              </div>
+              <div class="extraInfoSection__headerPrice">
+                $25
+              </div>
+            </div>
+            <ul class="extraInfoSection__list">
+                <li class="extraInfoSection__listItem">6 Videos Per Month</li>
+                <li class="extraInfoSection__listItem">2 Project Based Video Per Month</li>
+                <li class="extraInfoSection__listItem">Weekly Live Streams</li>
+                <li class="extraInfoSection__listItem">24/7 Email Support</li>
+                <li class="extraInfoSection__listItem extraInfoSection__listItem--crossedOut">24/7 Phone Support</li>
+                <li class="extraInfoSection__listItem extraInfoSection__listItem--crossedOut">1 Project Code Review Per Month</li>
+            </ul>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="extraInfoSection__card">
+            <div class="extraInfoSection__header">
+              <div class="extraInfoSection__headerText">
+                Pro
+              </div>
+              <div class="extraInfoSection__headerPrice">
+                $50
+              </div>
+            </div>
+            <ul class="extraInfoSection__list">
+              <li class="extraInfoSection__listItem">8 Videos Per Month</li>
+              <li class="extraInfoSection__listItem">4 Project Based Video Per Month</li>
+              <li class="extraInfoSection__listItem">Weekly Live Streams</li>
+              <li class="extraInfoSection__listItem">24/7 Email Support</li>
+              <li class="extraInfoSection__listItem">24/7 Phone Support</li>
+              <li class="extraInfoSection__listItem">1 Project Code Review Per Month</li>
+          </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!--* CONTACT FORM SECTION -->
+      <section class="contactSection">
+        <h2 class="contactSection__header">CONTACT </h2>
+        <form class="form">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+
+          <label for="Email">Email</label>
+          <input type="email" name="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+
+          <button class=contactSection__button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <!--* FOOTER -->
+    <footer>
+      <nav class="nav nav--bottom">
+        <img src="./images/wds_logo.png" alt="Web Dev Simplified logo" class="nav__logo">
+        <ul class="nav__list">
+          <li><a href="#">Curriculum</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a class="nav__list-button" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+  </body>
+</html>
+
+
+<!-- Project Source: https://courses.webdevsimplified.com/view/courses/learn-css-today/217600-layout-and-positioning/633642-32-bootcamp-landing-page -->

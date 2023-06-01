@@ -1,0 +1,728 @@
+/**CSS Normalisation (https://necolas.github.io/normalize.css/) */
+
+/*==========Document==========*/
+html {
+  line-height: 1.15;
+  /*Correct the line height in all browsers */
+  -webkit-text-size-adjust: 100%;
+  /*Prevent font-size adjustments after orientation changes (IOS)*/
+}
+
+/*==========Sections==========*/
+*,
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  /*Remove the margin, padding and border of all elements (all browsers)*/
+  font-size: 10px;
+  /*10px = 1em -> pixel size/10 = #em (16px=1.6em)*/
+  box-sizing: border-box;
+  /*The full area/size of an element’s box is measured by its total height and width, not just the content section. The different box sections adjust to the defined box size */
+}
+
+main {
+  display: block;
+  /*Renders “main” element consistently (IE)*/
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  /*Correct font-size and margin for h1 elements within “section” and “article” contexts (Chrome, Firefox, Safari) */
+}
+
+/*==========Grouping Content==========*/
+hr {
+  box-sizing: content-box;
+  height: 0;
+  /*Add the correct box-sizing (Firefox)*/
+  overflow: visible;
+  /*Show overflow (Edge, IE)*/
+}
+
+pre {
+  font-family: monospace, monospace;
+  /*Correct the inheritance and scaling of font size in all browsers*/
+  font-size: 1em;
+  /*Correct the odd `em` font sizing in all browsers.*/
+}
+
+/*==========Text Level Semantics==========*/
+a {
+  background-color: transparent;
+  /*Remove the gray background on active links (IE10)*/
+}
+
+abbr[title] {
+  border-bottom: none;
+  /*Remove the bottom border (Chrome 57+)*/
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  /*Add the correct text decoration (Chrome, Edge, IE, Opera, Safari)*/
+}
+
+b,
+strong {
+  font-weight: bolder;
+  /*Add the correct font weight (Chrome, Edge, Safari)*/
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /*Correct the inheritance and scaling of font size (all browsers)*/
+  font-size: 1em;
+  /*Correct the odd â€˜emâ€™ font sizing  (all browsers)*/
+}
+
+small {
+  font-size: 80%;
+  /*Add the correct font size (all browsers)*/
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/*Prevent “sub” and “sup” elements from affecting the line height in all browsers*/
+
+a,
+li,
+:link,
+:visited {
+  text-decoration: none;
+  /*removes default link underline styling*/
+}
+
+ul,
+ol {
+  list-style: none;
+  /*list markers are not commonly needed*/
+}
+
+address {
+  font-style: normal;
+  /*removes italicised text*/
+}
+
+/*==========Embedded Content==========*/
+
+img {
+  border-style: none;
+  /*Remove the border on images inside links (IE10)*/
+}
+
+/*==========Forms==========*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  /* Change the font styles (all browsers)*/
+  margin: 0;
+  /* Remove the margin (Firefox, Safari) */
+}
+
+button,
+input {
+  overflow: visible;
+  /* Show the overflow (IE)*/
+}
+
+button,
+select {
+  text-transform: none;
+  /*Remove the inheritance of text transform (Edge, Firefox, IE)*/
+}
+
+button:hover,
+input[type="submit"] {
+  cursor: pointer;
+  transform: translateY(-0.15em);
+  /*Buttons on hover use the pointer cursor and have a small animation*/
+}
+
+button,
+input[type="”submit”"] {
+  outline: none;
+  border: none;
+  /* removes default outline and border for these buttons*/
+}
+
+input,
+textarea {
+  outline: none;
+  /*Removes default outline for these elements, allows custom styling*/
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+  /*Correct the inability to style clickable types (IOS, Safari)*/
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+  /*Remove the inner border and padding (Firefox)*/
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+  /*Restore the focus styles unset by the previous rule*/
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+  /*Correct the padding (Firefox)*/
+}
+
+legend {
+  box-sizing: border-box;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+  /*Correct the text wrapping (Edge, IE)*/
+  color: inherit;
+  /*Correct the color inheritance from "fieldset" elements (IE) */
+  padding: 0;
+  /*Remove the padding so developers are not caught out when they zero out
+  "fieldset" elements in all browsers */
+}
+
+progress {
+  vertical-align: baseline;
+  /*Add the correct vertical alignment (Chrome, Firefox, Opera)*/
+}
+
+textarea {
+  overflow: auto;
+  /*Remove the default vertical scrollbar (IE10+)*/
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /*Add the correct box sizing (IE10)*/
+  padding: 0;
+  /*Remove the padding in (IE10)*/
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+  /*Correct the cursor style of increment and decrement buttons (Chrome)*/
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  /*Correct the odd appearance (Chrome, Safari)*/
+  outline-offset: -2px;
+  /*Correct the outline style (Safari) */
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  /*Remove the inner padding (Chrome, Safari on macOS*/
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /*Correct the inability to style clickable types (IOS, Safari)*/
+  font: inherit;
+  /*Change font properties to `inherit` (Safari)*/
+}
+
+/*==========Interactive==========*/
+details {
+  display: block;
+  /*Add the correct display (Edge, IE 10+, Firefox*/
+}
+
+summary {
+  display: list-item;
+  /*Add the correct display (all browsers)*/
+}
+
+/*==========Misc==========*/
+template {
+  display: none;
+  /*Add the correct display (IE10+)*/
+}
+
+[hidden] {
+  display: none;
+  /*Add the correct display (IE 10)*/
+}
+
+/**============================CUSTOM-STYLES==================================*/
+
+/* Fonts
+font-family: 'Squada One', cursive; (400)
+font-family: 'Actor', sans-serif; (400)
+font-family: 'Hind Siliguri', sans-serif; (300, 400, 600)
+*/
+body {
+  color: #1b2522;
+
+  --header__main-heading-duration: 500ms;
+  --header__sub-heading-duration: 500ms;
+  --nav-duration: 200ms;
+  --header__link-duration: 200ms;
+  --scroll-down-duration: 200ms;
+
+  --header__sub-heading-delay:calc(var(--header__main-heading-duration) - 200ms);
+  --nav-delay:calc(var(--header__sub-heading-delay) + var(--header__sub-heading-duration));
+  --header__link-delay: var(--nav-delay);
+  --scroll-down-delay: var(--nav-delay);
+}
+
+/** HEADER SECTION */
+.header {
+  block-size: 100vh;
+  font-family: "Squada One", cursive;
+  color: #1b2522;
+  background-image: url(images/header_image.jpg);
+  background-size: cover;
+  background-position-x: 40%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/*? Because we remove 'nav' (nav--top) from normal document flow, this 'header' flexbox only contains 4 elements (those from h1 to img). */
+
+/*? Kyle used 'background-size: cover' NOT 'contain' so that the image spreads across a larger area. Then used the bg-position properties to move the image about so we get the part we want as the bg. */
+
+/*? Don't forget, an element can have a POSITION property AND a DISPLAY property applied to it. Don't have to be kept separate from each other. */
+
+/*? 'overflow: hidden' to get rid of scrollbar that briefly appears during initial animations */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b2522;
+  padding: 0.8em 1.6em;
+  font-family:'Squada One', cursive;
+}
+
+/*? ^^ Kyle makes a container with two elements: the img and the ul list. Then turns it into a flexbox and applies space-between to send them to either side of the viewport. Then utilises flexbox to align the items vertically too (align-items: center) */
+
+.nav--top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  animation: nav-enter var(--nav-duration) var(--nav-delay) backwards;
+}
+/*? ^^ Used 'position: fixed' to take 'nav--top' out of normal document flow, while maintaining the same styles between top and bottom navbars. These (off-set) properties say that our element will be "X from the ___" which is how he gets the navbar to sit at the very top of the screen. */
+
+.nav__logo {
+  inline-size: 60px;
+}
+.nav__list {
+  display: flex;
+}
+
+/*? ^^ Remember, 'nav-list' is the PARENT container which should be used to style the element's display type, or, shared children properties. Kyle uses the 'a' tag below to style the children themselves. */
+
+/*? ^^ Kyle makes a nested flexbox! Not a problem to do this. */
+
+.nav__list a {
+  color: white;
+  font-size: 2em;
+  margin-left: 1.6em;
+}
+/*? ^^ Simply uses 'margin-left' to create the gaps between the nav list items, not giving the nav list a width and then playing around with the space arrangement within the flexbox. */
+
+.nav__list a:hover {
+  color: #ccc;
+  transition: color 100ms;
+}
+.nav__list-button,
+.contactSection__button {
+  background-color: hsl(200, 100%, 50%);
+  border-radius: 100px;
+  padding: 0.3em 1em;
+  transition: 100ms;
+}
+.header__main-heading {
+  font-size: 8em;
+  letter-spacing: 5px;
+  margin: 0;
+
+  animation: main-heading-enter var(--header__main-heading-duration) ;
+}
+.header__sub-heading {
+  font-size: 4em;
+  font-family: "Actor", sans-serif;
+  margin: 1vh 0;
+
+  animation: sub-heading-enter var(--header__sub-heading-duration) var(--header__sub-heading-delay) backwards;
+}
+/*? ^^ 'Backwards' keyword was key to making animation perform properly (i.e. text was on screen then animated. Not quite sure how this works? Research. */
+
+.header__link {
+  color: white;
+  font-size: 2em;
+  margin: 2vh 0;
+  background-color: hsl(200, 100%, 50%);
+  border-radius: 100px;
+  padding: 0.3em 1em;
+  transition: 100ms;
+
+  animation: header__link-enter var(--header__link-duration) var(--header__link-delay) backwards;
+}
+.header__link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px 1px black;
+}
+.nav__list-button:hover,
+.header__link:hover,
+.contactSection__button:hover {
+  background-color: hsl(200, 100%, 40%);
+}
+/*? ^^ Reduces light (of HSL) by 10% for hovering effect and adds 100ms of transition to make it smoother  */
+
+.header__image {
+  position: absolute;
+  bottom: 10px;
+  block-size: 30px;
+
+  animation:
+  scroll-down-enter var(--scroll-down-duration) var(--scroll-down-delay) backwards,
+  scroll-down-bounce 1000ms alternate 1s infinite linear;
+
+}
+/*? "^^ Image sits in the middle of our screen because it sits within a flexbox model */
+
+/* HEADER KEYFRAMES */
+@keyframes main-heading-enter {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes sub-heading-enter {
+  from {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes nav-enter {
+  from {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes header__link-enter {
+  from {
+    transform: scale(0);
+  }
+}
+
+@keyframes scroll-down-enter {
+  from {
+    transform: scale(0) rotate(180deg);
+  }
+}
+/*? ^^ "scale(0)" is to ensure the arrow doesn't appear until the moment that we want it to  */
+
+@keyframes scroll-down-bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* HEADER MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .header__main-heading{
+    font-size: 7em;
+    text-align: center;
+  }
+  .header__sub-heading {
+    font-size: 3em;
+    text-align: center;
+  }
+  .header {
+    background-position-x: 50%;
+  }
+  .nav__logo {
+    inline-size: 40px;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav__list a {
+    color: white;
+    font-size: 1.5em;
+  }
+}
+
+
+/** MAIN PAGE SECTION */
+
+.mainSection {
+  padding: 3em;
+}
+.mainSection__header,
+.contactSection__header {
+  font-size: 5em;
+  text-align: center;
+  color: black;
+  font-family: "Actor", sans-serif;
+  margin-bottom: 2.5vh;
+  letter-spacing: 2px;
+}
+.mainSection__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 450px));
+  justify-content: center;
+}
+.mainSection__grid-item {
+  display: flex;
+  align-items: center;
+  gap: 10px 15px;
+  padding: 20px;
+}
+/*? Again, a flexbox WITHIN a grid container! Helps Kyle easily organise content layout within grid items. There's no perceived limit! I guess this is a simpler way than making the elements inline so they sit alongside each other and then playing around with padding and margin to create the spaces between them. */
+
+.mainSection__grid-item:hover img {
+  animation: shake 100ms;
+}
+/*? ^^ Order of selectors is important just to get img to shake (i.e. wasn't "mainSection__grid-item", was "img", was "mainSection__grid-item:hover img" */
+
+.mainSection__grid-item img {
+  width: 50px;
+  margin-right: 1.6em;
+}
+.mainSection__grid-item p,
+.extraInfoSection p {
+  font-size: 2em;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+}
+
+/* MAIN SECTION KEYFRAMES */
+
+@keyframes shake {
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+
+/* MAIN SECTION MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .mainSection__grid {
+    display: grid;
+    grid-template-columns: minmax(auto, 450px);
+    justify-content: center;
+  }
+}
+
+/** EXTRA INFO SECTION */
+.extraInfoSection {
+  background-color: hsl(200, 100%, 40%);
+  padding: 2.5em;
+}
+.extraInfoSection__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.extraInfoSection__card {
+  background-color: #f3e3bc;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 1.6em;
+  margin: 1.6em 0;
+  transition: 100ms;
+}
+.extraInfoSection__card:hover {
+  transform: scale(102%);
+}
+
+.extraInfoSection__card--white {
+  background-color: #fff;
+  margin: 0;
+}
+.extraInfoSection__card:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  transform-origin: right;
+}
+/*? ^^ Uses transform-origin to get around ugly scaling of right and left cards. Simply changes how it scales up so we don't see the side without borders on top of the white card. Only that we have to change the transform-origin to center for tablet/mobile version  */
+
+.extraInfoSection__card:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+  transform-origin: left;
+}
+.extraInfoSection__headerText,
+.extraInfoSection__headerPrice {
+  font-size: 4.5em;
+  font-family: "Actor", sans-serif;
+  text-align: center;
+}
+.extraInfoSection__headerPrice {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  position: relative;
+}
+.extraInfoSection__headerPrice::after {
+  content: " /mo";
+  font-size: 2rem;
+  color: #777;
+  position: absolute;
+  top: 25px;
+}
+.extraInfoSection__list {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+}
+.extraInfoSection__listItem {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+.extraInfoSection__listItem:last-child {
+  margin-bottom: 0;
+}
+.extraInfoSection__listItem--crossedOut {
+  color: #777;
+  text-decoration: line-through;
+}
+
+/* EXTRA INFO MEDIA QUERY */
+@media screen and (max-width: 768px) {
+  .extraInfoSection__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .extraInfoSection__list {
+    text-align: center;
+  }
+  .extraInfoSection__card:first-child, .extraInfoSection__card:last-child {
+    border: 1px solid black;
+    border-radius: 3px;
+    transform-origin: center;
+  }
+  .extraInfoSection__card:last-child {
+    margin-bottom: 0;
+  }
+  .extraInfoSection__listItem--crossedOut {
+    display: none;
+  }
+  .extraInfoSection__card {
+    transform: none;
+    transition: none;
+  }
+}
+
+/** CONTACT FORM SECTION */
+.contactSection {
+  padding: 2.5em;
+}
+.contactSection__header {
+  font-size: 4em;
+}
+.contactSection__button {
+  color: white;
+  transition: 100ms;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  inline-size: 50vw;
+  margin: 0 auto;
+}
+.form label {
+  font-size: 1.8em;
+  line-height: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  margin-bottom: 3px;
+}
+.form label:nth-child(n + 2) {
+  margin-top: 15px;
+}
+.form input,
+textarea {
+  background-color: white;
+  line-height: 2em;
+  border: 1px solid #9e9e9e;
+  border-radius: 3px;
+  font-size: 1.8em;
+  font-family: "Hind Siliguri", sans-serif;
+  padding-left: 5px;
+}
+.contactSection__button {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Hind Siliguri", sans-serif;
+  max-width: fit-content;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 75px;
+  max-height: 200px;
+}
+/*? ^^ Limiting textarea size, or could say 'resize: none'   */
+
+.form input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  border-color: #0af;
+  transition: 100ms;
+}

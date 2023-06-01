@@ -1,0 +1,26 @@
+/* 
+
+1) Centered header
+2) Green background for Hobbies and Favourite Languages
+3) First element in those green boxes have cyan font
+4) Ariel font family for headers of different sections 
+5) Line through last favourite band item 
+
+*/
+
+header {
+  text-align: center;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.green-white-section {
+  background-color: green;
+  color: white;
+}
+.cyan-txt {
+  color: cyan;
+}
+#cross-out {
+  text-decoration: line-through;
+}
